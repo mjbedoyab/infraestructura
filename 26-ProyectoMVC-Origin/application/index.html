@@ -1,11 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>403 Forbidden</title>
-</head>
-<body>
-
-<p>Directory access is forbidden.</p>
-
-</body>
-</html>
+services: - type: web name: codeigniter-app env: php plan: free buildCommand: | composer install --no-dev --optimize-autoloader || true startCommand: | php -S 0.0.0.0:$PORT -t . envVars: - key: DB_HOST value: dpg-xxxxxx.render.com - key: DB_PORT value:
+5432 - key: DB_NAME value: app_infra - key: DB_USER value: postgres - key: DB_PASS value: maiicol123
